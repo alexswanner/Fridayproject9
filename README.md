@@ -1,1 +1,5 @@
 To run this program, you need to install both the .env file and the fridayproject9.py file. In the .env file you need to insert your own API key.
+
+While working with the OpenAI API, I encountered several issues related to version compatibility and deprecated models. First, I received an error indicating that the openai.completion endpoint was no longer supported in OpenAI version 1.0.0 or higher. To resolve this, I downgraded the OpenAI Python library to version 0.28 using the command pip install openai==0.28. Additionally, I ran into an issue with the model text-davinci-003, which was deprecated. To fix this, I switched to a supported model like gpt-3.5-turbo or gpt-4 instead. Lastly, I encountered an error stating that the v1/completions endpoint is not compatible with chat models. The solution was to use the correct endpoint for chat models: v1/chat/completions. These steps allowed me to resolve the errors and get the application working smoothly.
+
+^^ This is all true but chat gpt definitely wrote that. 
